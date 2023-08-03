@@ -1,0 +1,95 @@
+2023/08/03 11:15:20 [notice] 1#1: using the "epoll" event method
+2023/08/03 11:15:20 [notice] 1#1: nginx/1.25.1
+2023/08/03 11:15:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/03 11:15:20 [notice] 1#1: OS: Linux 5.15.0-78-generic
+2023/08/03 11:15:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/03 11:15:20 [notice] 1#1: start worker processes
+2023/08/03 11:15:20 [notice] 1#1: start worker process 19
+2023/08/03 11:15:20 [notice] 1#1: start worker process 20
+2023/08/03 11:15:45 [alert] 19#19: *1 write() to "/var/log/nginx/access.log" failed (28: No space left on device) while logging request, client: 192.168.188.1, server: , request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 11:21:36 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/03 11:21:36 [notice] 19#19: gracefully shutting down
+2023/08/03 11:21:36 [notice] 19#19: exiting
+2023/08/03 11:21:36 [notice] 20#20: gracefully shutting down
+2023/08/03 11:21:36 [notice] 20#20: exiting
+2023/08/03 11:21:36 [notice] 19#19: exit
+2023/08/03 11:21:36 [notice] 20#20: exit
+2023/08/03 11:21:36 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2023/08/03 11:21:36 [notice] 1#1: worker process 19 exited with code 0
+2023/08/03 11:21:36 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/03 11:21:36 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/08/03 11:21:36 [notice] 1#1: worker process 20 exited with code 0
+2023/08/03 11:21:36 [notice] 1#1: exit
+2023/08/03 11:35:24 [notice] 1#1: using the "epoll" event method
+2023/08/03 11:35:24 [notice] 1#1: nginx/1.25.1
+2023/08/03 11:35:24 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/03 11:35:24 [notice] 1#1: OS: Linux 5.15.0-78-generic
+2023/08/03 11:35:24 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/03 11:35:24 [notice] 1#1: start worker processes
+2023/08/03 11:35:24 [notice] 1#1: start worker process 20
+2023/08/03 11:35:24 [notice] 1#1: start worker process 21
+2023/08/03 13:50:51 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/03 13:50:51 [notice] 21#21: gracefully shutting down
+2023/08/03 13:50:51 [notice] 21#21: exiting
+2023/08/03 13:50:51 [notice] 20#20: gracefully shutting down
+2023/08/03 13:50:51 [notice] 20#20: exiting
+2023/08/03 13:50:51 [notice] 20#20: exit
+2023/08/03 13:50:51 [notice] 21#21: exit
+2023/08/03 13:50:51 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/08/03 13:50:51 [notice] 1#1: worker process 20 exited with code 0
+2023/08/03 13:50:51 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/03 13:50:51 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/08/03 13:50:51 [notice] 1#1: worker process 21 exited with code 0
+2023/08/03 13:50:51 [notice] 1#1: exit
+2023/08/03 13:51:11 [notice] 1#1: using the "epoll" event method
+2023/08/03 13:51:11 [notice] 1#1: nginx/1.25.1
+2023/08/03 13:51:11 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/03 13:51:11 [notice] 1#1: OS: Linux 5.15.0-78-generic
+2023/08/03 13:51:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/03 13:51:11 [notice] 1#1: start worker processes
+2023/08/03 13:51:11 [notice] 1#1: start worker process 20
+2023/08/03 13:51:11 [notice] 1#1: start worker process 21
+2023/08/03 13:51:15 [error] 20#20: *1 directory index of "/var/www/" is forbidden, client: 192.168.188.1, server: 192.168.188.128, request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 13:51:16 [error] 20#20: *1 directory index of "/var/www/" is forbidden, client: 192.168.188.1, server: 192.168.188.128, request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 13:51:16 [error] 20#20: *1 directory index of "/var/www/" is forbidden, client: 192.168.188.1, server: 192.168.188.128, request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 13:51:17 [error] 20#20: *1 directory index of "/var/www/" is forbidden, client: 192.168.188.1, server: 192.168.188.128, request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 13:51:17 [error] 20#20: *1 directory index of "/var/www/" is forbidden, client: 192.168.188.1, server: 192.168.188.128, request: "GET / HTTP/1.1", host: "192.168.188.128"
+2023/08/03 13:52:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/03 13:52:58 [notice] 20#20: gracefully shutting down
+2023/08/03 13:52:58 [notice] 20#20: exiting
+2023/08/03 13:52:58 [notice] 20#20: exit
+2023/08/03 13:52:58 [notice] 21#21: gracefully shutting down
+2023/08/03 13:52:58 [notice] 21#21: exiting
+2023/08/03 13:52:58 [notice] 21#21: exit
+2023/08/03 13:52:58 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/08/03 13:52:58 [notice] 1#1: worker process 20 exited with code 0
+2023/08/03 13:52:58 [notice] 1#1: worker process 21 exited with code 0
+2023/08/03 13:52:58 [notice] 1#1: exit
+2023/08/03 13:53:33 [emerg] 1#1: no "ssl_certificate" is defined for the "listen ... ssl" directive in /etc/nginx/conf.d/app.conf:35
+2023/08/03 14:00:59 [notice] 1#1: using the "epoll" event method
+2023/08/03 14:00:59 [notice] 1#1: nginx/1.25.1
+2023/08/03 14:00:59 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/03 14:00:59 [notice] 1#1: OS: Linux 5.15.0-78-generic
+2023/08/03 14:00:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/03 14:00:59 [notice] 1#1: start worker processes
+2023/08/03 14:00:59 [notice] 1#1: start worker process 20
+2023/08/03 14:00:59 [notice] 1#1: start worker process 21
+2023/08/03 14:05:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/03 14:05:10 [notice] 20#20: gracefully shutting down
+2023/08/03 14:05:10 [notice] 20#20: exiting
+2023/08/03 14:05:10 [notice] 21#21: gracefully shutting down
+2023/08/03 14:05:10 [notice] 21#21: exiting
+2023/08/03 14:05:10 [notice] 21#21: exit
+2023/08/03 14:05:10 [notice] 20#20: exit
+2023/08/03 14:05:10 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/08/03 14:05:10 [notice] 1#1: worker process 20 exited with code 0
+2023/08/03 14:05:10 [notice] 1#1: worker process 21 exited with code 0
+2023/08/03 14:05:10 [notice] 1#1: exit
+2023/08/03 14:05:27 [notice] 1#1: using the "epoll" event method
+2023/08/03 14:05:27 [notice] 1#1: nginx/1.25.1
+2023/08/03 14:05:27 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/03 14:05:27 [notice] 1#1: OS: Linux 5.15.0-78-generic
+2023/08/03 14:05:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/03 14:05:27 [notice] 1#1: start worker processes
+2023/08/03 14:05:27 [notice] 1#1: start worker process 20
+2023/08/03 14:05:27 [notice] 1#1: start worker process 21
