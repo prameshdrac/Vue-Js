@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+
+#Vue-web
+  vue-web:
+    env_file: .env
+    container_name: ${CONTAINER_NAME}
+    image: ${IMAGE_NAME}
+    build:
+      context: ./code
+      dockerfile: Dockerfile
+      args:
+        CLEAN_YARN_CACHE: "true"
+        ENABLE_TYPESCRIPT: ${ENABLE_TYPESCRIPT}
+        HOST: ${VUE_UI_HOST}
+        PROJECT_PATH: ${PROJECT_PATH}
+        NODE_VERSION: ${NODE_VERSION}
+        VUE_CLI_VERSION: ${VUE_CLI_VERSION}
+    networks:
+      local:
+        aliases: 
+          - ${NETWORK}
+    ports:
+      - ${VUE_UI_PORT}:${VUE_UI_PORT}
+    volumes:
+      - ./code:${PROJECT_PATH}:consistent
+    # Override Dockerfile default command 
+    command: ["vue", "ui", "--headless", "--port", "${VUE_UI_PORT}", "--host", "${VUE_UI_HOST}"]
+
+ 
+      
+#Nginx-Web Server
+  nginx:
+    container_name: ${CONTAINER_NAME}-nginx
+    image: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./code:${PROJECT_PATH}
+      - ./build/nginx/conf.d/:/etc/nginx/conf.d/
+      - ./build/nginx/log:/var/log/nginx
+    networks:
+      local:
+        aliases: 
+          - ${NETWORK}
+
+#Docker Networks
+networks:
+  local:
+    name: ${NETWORK}
+
+
